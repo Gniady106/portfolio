@@ -1,0 +1,164 @@
+ :root{
+    --bacground-color: #f4f1ee;
+    --text-color: #333;
+    --extra-color:#a3c9a8 ;
+    --buttons-color: #6b9080;
+ }
+ 
+
+
+ body{
+    height: 2000px;
+    margin: 0;
+    background-color: var(--bacground-color);
+ }
+ .header{
+    
+    color: var(--text-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* logo z lewej, navbar z prawej */
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--bacground-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.1);
+  }
+
+ .logo {
+   
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+ }
+
+ .navbar{
+    background-color: var(--bacground-color);
+    display: flex;
+    align-items:center;
+    width: max-content;
+    font-size: 24px;
+ }
+
+ .navbar a{
+   color: var(--text-color);
+   padding: 10px 5px;
+   margin: 0px 5px 0px 5px;
+   cursor: pointer;
+   text-decoration: none;
+   font-weight: bold;
+   transition: background-color 0.3s ease, color 0.3s ease;
+   border-radius: 6px;
+   box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.1);
+   
+ }
+ .tag:hover{
+    
+   background-color: var(--buttons-color);
+   color: white; 
+   box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.3);
+ }
+
+ #o-mnie{
+      font-size: 48px;
+      text-align: center;
+  
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://img.freepik.com/free-vector/gradient-black-technology-background_23-2149209060.jpg');
+      background-size: cover; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+   
+ }
+
+
+
+ .o-mnie-section-1{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   flex-wrap: wrap;
+   max-width: 1000px;
+   margin: 0 auto;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   font-family: "Nova Flat", sans-serif;
+
+ }
+
+ .my-img{
+   width: 300px;
+   height: 300px;
+   object-fit:cover ;
+   border-radius: 50%;
+   border: 3px solid var(--extra-color);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease;
+ }
+ .my-img:hover {
+   transform: scale(1.05);
+  
+}
+
+.bio {
+   font-size: 22px;
+   max-width: 500px;
+   color:var(--bacground-color);
+   line-height: 1.6;
+}
+
+.btn-cv{
+   text-decoration: none;
+   color: var(--text-color);
+   background-color: var(--buttons-color);
+   border-radius: 20px;
+   padding: 20px;
+   border: solid var(--extra-color);
+   
+   font-size: 20px;
+   transition: background-color 0.7s ease, transform 0.7s ease;
+   
+}
+
+.btn-cv:hover{
+   background-color: black;
+   transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+.separator {
+  border: none;
+  height: 2px;
+  background-color: var(--extra-color);
+  width: 80%;
+  margin: 40px auto;
+  border-radius: 2px;
+}
+
+.portfolio{
+   background-color: grey;
+   height: 300px;
+   
+}
+.portfolio-section-2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   flex-wrap: wrap;
+   max-width: 1000px;
+   margin: 0 auto;
+   
+   
+}
+   
