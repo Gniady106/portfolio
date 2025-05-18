@@ -9,14 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Barriecito&family=Nova+Flat&display=swap"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
   </head>
   <body>
     <header class="header">
-      <div class="logo">LOGO</div>
+      <div class="logo">Michał Gniadek</div>
       <nav class="navbar">
         <a class="tag" href="#o-mnie">O mnie</a>
-        <a class="tag" href="#portfolio">Umiejętności</a>
-        <a class="tag" href="#education">Education</a>
+        <a class="tag" href="#narzędzia">Umiejętności</a>
+        <a class="tag" href="#portfolio">Portfolio</a>
         <a class="tag" href="#kontakt">Kontakt</a>
       </nav>
     </header>
@@ -38,7 +42,7 @@
       </div>
     </section>
     <section class="skills-section">
-      <h2>Narzędzia i umiejętności</h2>
+      <h2 id="narzędzia">Narzędzia i umiejętności</h2>
 
       <div class="skills">
         <div class="skill-row-1">
@@ -75,22 +79,25 @@
       </div>
     </section>
 
-    <section class="portfolio-section" id="portfolio">
-      <h2 class="section-title">Portfolio</h2>
+    <section class="portfolio-section">
+      <h2 class="section-title" id="portfolio">Portfolio</h2>
       <div class="projects-container">
-
         <div class="project-card">
           <h3>Cypress_Typescript</h3>
           <h4>Technologie: Cypress, TypeScript, JavaScript</h4>
           <p>
             W ramach tego projektu stworzyłem zestaw automatycznych testów
             end-to-end dla przykładowego sklepu internetowego FakeStore,
-            testując kluczowe ścieżki użytkownika w aplikacji.
+            testując kluczowe ścieżki użytkownika w aplikacji. Testy zostały
+            napisane zgodnie z dobrymi praktykami automatyzacji np. każdy test
+            jest niezależny, asercje sprawdzające nie tylko obecność elementu,
+            ale też treść lub stan, tworzenie własnych komend dla powtarzalnych
+            elementów.
           </p>
           <div class="project-links">
             <a
               href="https://github.com/Gniady106/Projekt_Cypress"
-              target="_blank"  
+              target="_blank"
               rel="noopener noreferrer"
               >GitHub</a
             >
@@ -99,22 +106,47 @@
 
         <div class="project-card">
           <h3>Olimpic Games Project</h3>
-          <h4>Technologie: C#, ASP.NET MVC, Entity Framework </h4>
+          <h4>Technologie: C#, ASP.NET MVC, Entity Framework</h4>
           <p>
-            Aplikacja internetowa stworzona w architekturze MVC do zarządzania
-            informacjami o Igrzyskach Olimpijskich. Umożliwia przeglądanie,
-            dodawanie i edycję danych o sportowcach, konkurencjach oraz
-            zdobytych medalach.
+            Aplikacja webowa stworzona w architekturze MVC do zarządzania
+            informacjami o Igrzyskach Olimpijskich. Umożliwia przeglądanie
+            danych o sportowcach, konkurencjach oraz zdobytych medalach.
+            Zalogowany użytkownik ma również możliwość dodania nowego udziału
+            sportowca w wydarzeniu.
           </p>
           <div class="project-links">
-            <a href="https://github.com/Gniady106/OlimpicGamesProject" target="_blank" rel="noopener noreferrer"
+            <a
+              href="https://github.com/Gniady106/OlimpicGamesProject"
+              target="_blank"
+              rel="noopener noreferrer"
               >GitHub</a
             >
           </div>
         </div>
-        <!-- Dodaj więcej kart według potrzeb -->
       </div>
     </section>
+
+    
+    
+    
+    
+    <footer class="footer" >
+      <h2 id="kontakt">Kontakt</h2>
+      <div class="footer-content">
+        <a href="mailto:michal@example.com"><i class="fa-solid fa-envelope"></i> Email: michal@example.com</a>
+        <a href="tel:+48531947427">
+          <i class="fa-solid fa-phone"></i> Telefon: 531 947 427
+        </a>
+        <a
+        href="https://github.com/Gniady106"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <i class="fa-brands fa-github"></i>
+          GitHub: github.com/Gniady106
+          </a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
