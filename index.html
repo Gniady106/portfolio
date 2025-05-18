@@ -1,61 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moja Profesjonalna Strona</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Nova+Flat&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Nova+Flat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">LOGO</div>
-        <nav class="navbar">
-                <a class="tag" href="#o-mnie">O mnie</a>
-                <a class="tag" href="#portfolio">Portfolio</a>
-                <a class="tag" href="#education">Education</a>
-                <a class="tag" href="#kontakt">Kontakt</a>
-                
-        </nav>
+      <div class="logo">LOGO</div>
+      <nav class="navbar">
+        <a class="tag" href="#o-mnie">O mnie</a>
+        <a class="tag" href="#portfolio">Umiejętności</a>
+        <a class="tag" href="#education">Education</a>
+        <a class="tag" href="#kontakt">Kontakt</a>
+      </nav>
     </header>
 
-    
+    <section class="o-mnie" id="o-mnie">
+      <div class="o-mnie-section-1">
+        <img class="my-img" src="img/michalZdj.jpg" alt="Foto" />
+        <p class="bio">
+          Jestem studentem informatyki stosowanej, który z pasją uczy się
+          programowania. Moje zainteresowania skupiają się wokół tworzenia
+          aplikacji webowych oraz rozwiązywania realnych problemów za pomocą
+          kodu. Lubię uczyć się nowych technologii i brać udział w projektach
+          zespołowych.
+        </p>
 
+        <a href="cv/CV_Michał_Gniadek.pdf" class="btn-cv" download
+          >Pobierz CV</a
+        >
+      </div>
+    </section>
+    <section class="skills-section">
+      <h2>Narzędzia i umiejętności</h2>
 
-    
-        <section class="o-mnie" id="o-mnie">
-            <div class="o-mnie-section-1">
-                <img class="my-img" src="img/michalZdj.jpg" alt="Foto">
-                <p class="bio">Jestem studentem informatyki stosowanej, który z pasją uczy się 
-                    programowania. Moje zainteresowania skupiają się wokół tworzenia aplikacji 
-                    webowych oraz rozwiązywania realnych problemów za pomocą kodu. Lubię uczyć się 
-                    nowych technologii i brać udział w projektach zespołowych.</p>
-                    
-                 <a href="cv/CV_Michał_Gniadek.pdf" class="btn-cv" download>Pobierz CV</a>
-                 
-            </div>
-        </section>
+      <div class="skills">
+        <div class="skill-row-1">
+          <p><img src="Logo/html.png" alt="HTML" />HTML</p>
+          <p><img src="Logo/icons8-css-24.png" alt="CSS" />CSS</p>
+          <p><img src="Logo/js.png" alt="JS" />JavaScript</p>
+          <p>
+            <img
+              src="Logo/Postman.png"
+              alt="JS"
+              width="24"
+              height="24"
+            />Postman
+          </p>
+          <p>
+            <img
+              src="Logo/typescript.png"
+              alt="JS"
+              width="24"
+              height="24"
+            />Typescript / Cypress
+          </p>
+        </div>
 
-        
-         <section class="portfolio" id="portfolio">
-            <div class="portfolio-section-2">
-                <h2>Portfolio</h2>
-                <p class="project1">Nazywam się Michał Gniadek, jestem studentem informatyki stosowanej specjalizującym się w programowaniu. Moim celem 
-                    jest zdobycie doświadczenia w branży IT.</p>
-                
-            </div>
-        </section>
-         <section class="portfolio" id="portfolio">
-            <div class="portfolio-section-2">
-                <h2>Portfolio</h2>
-                <p class="project1">Nazywam się Michał Gniadek, jestem studentem informatyki stosowanej specjalizującym się w programowaniu. Moim celem 
-                    jest zdobycie doświadczenia w branży IT.</p>
-                
-            </div>
-        </section>
-        
-        
+        <div class="skill-row-2">
+          <p><img src="Logo/c-sharp.png" alt="" />C# / .Net</p>
+          <p><img src="Logo/Visual.png" alt="" />Visual Studio</p>
+          <p><img src="Logo/github.png" alt="" />GitHub</p>
+          <p><img src="Logo/sql-server.png" alt="" />MS SQL</p>
+          <p>
+            <img src="Logo/office.png" alt="" width="24" height="24" />MS Office
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <script src="script.js"></script>
-    </body>
+    <section class="portfolio-section" id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="projects-container">
+
+        <div class="project-card">
+          <h3>Cypress_Typescript</h3>
+          <h4>Technologie: Cypress, TypeScript, JavaScript</h4>
+          <p>
+            W ramach tego projektu stworzyłem zestaw automatycznych testów
+            end-to-end dla przykładowego sklepu internetowego FakeStore,
+            testując kluczowe ścieżki użytkownika w aplikacji.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/Gniady106/Projekt_Cypress"
+              target="_blank"  
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Olimpic Games Project</h3>
+          <h4>Technologie: C#, ASP.NET MVC, Entity Framework </h4>
+          <p>
+            Aplikacja internetowa stworzona w architekturze MVC do zarządzania
+            informacjami o Igrzyskach Olimpijskich. Umożliwia przeglądanie,
+            dodawanie i edycję danych o sportowcach, konkurencjach oraz
+            zdobytych medalach.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Gniady106/OlimpicGamesProject" target="_blank" rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+        <!-- Dodaj więcej kart według potrzeb -->
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
