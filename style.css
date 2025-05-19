@@ -1,8 +1,8 @@
 :root {
-  --bacground-color: #f4f1ee;
-  --text-color: #333;
-  --extra-color: #a3c9a8;
-  --buttons-color: #6b9080;
+   --background-color: #0e0f11;     /* ciemne tło, nie czarne – bardziej "tech" */
+  --text-color: #f5f5f5;           /* jasny, czytelny tekst */
+  --buttons-color: #45bef1;        /* neon aqua – nowoczesny akcent */
+  --extra-color: #1f1f1f;   
 }
 
 body {
@@ -11,58 +11,65 @@ body {
 }
 .header {
   color: var(--text-color);
-  
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between; /* logo z lewej, navbar z prawej */
-  align-items: center;
-  padding: 10px 30px;
-  background-color: var(--bacground-color);
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-  padding: 10px;
-  font-size: 24px;
-  font-weight: bold;
+  background:linear-gradient(90deg, #03081a, #050f3e, #15749c) ;
+  padding: 10px 10px;
+ 
 }
 
 .navbar {
-  background-color: var(--bacground-color);
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: max-content;
-  font-size: 24px;
+  padding: 20px 20px 20px 20px;
+  gap: 20px;
+  color: var(--text-color);
+  
+  
 }
 
-.navbar a {
-  color: var(--text-color);
-  padding: 10px 5px;
-  margin: 0px 5px 0px 5px;
-  cursor: pointer;
+.nav-link {
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 6px;
-  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+  font-weight:500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+  position: relative;
 }
-.tag:hover {
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
   background-color: var(--buttons-color);
-  color: white;
-  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease;
 }
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: var(--buttons-color);
+}
+
 
 #o-mnie {
   font-size: 48px;
   text-align: center;
+  
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://img.freepik.com/free-vector/gradient-black-technology-background_23-2149209060.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: 
+    url("img/Flux_Dev_A_futuristic_digital_backdrop_with_sleek_circuits_wir_2.jpg");
+    background-size: cover;
+  
+  background-position: center 50%;
   background-repeat: no-repeat;
 }
 
@@ -76,45 +83,51 @@ body {
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  font-family: "Nova Flat", sans-serif;
+  font-family:  sans-serif;
 }
 
 .my-img {
   width: 300px;
   height: 300px;
   object-fit: cover;
+  object-position: center 40%; 
+  
+  
+
   border-radius: 50%;
   border: 3px solid var(--extra-color);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.5s ease;
 }
 .my-img:hover {
   transform: scale(1.05);
+  box-shadow: 0px 0px 50px var(--buttons-color);
 }
 
 .bio {
   font-size: 22px;
   max-width: 500px;
-  color: var(--bacground-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
 .btn-cv {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--background-color);
   background-color: var(--buttons-color);
   border-radius: 20px;
   padding: 20px;
   border: solid var(--extra-color);
-
+ 
   font-size: 20px;
   transition: background-color 0.7s ease, transform 0.7s ease;
 }
 
 .btn-cv:hover {
-  background-color: black;
+  background-color: #0e0f11;
   transform: scale(1.05);
-  color: var(--bacground-color);
+  color: var(--buttons-color);
+  border: 1px solid var(--buttons-color);
 }
 
 .skills-section h2 {
@@ -148,9 +161,9 @@ body {
 .skill-row-2 {
   display: flex;
   justify-content: center; 
-  gap: 30px;              
+  gap: 40px;              
   flex-wrap: wrap;        
-  margin-bottom: 20px;     /* odstęp między wierszami */
+  margin-bottom: 20px;     
 }
 
 .skill-row-1 p,
@@ -188,32 +201,87 @@ body {
 
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
-  padding-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 50px ;
   
 }
+
+
 
 .project-card{
-  border: solid var(--extra-color);
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px 0 20px 0;
-  box-shadow: 0px 4px 6px 2px #333;
-  transition: transform 0.5s ease, box-shadow 0.5s ease ;
-  max-width: 400px;
   
+  perspective: 1000px;
+  height: 300px;
+  width: 350px;
+  padding-bottom: 50px;
+}
+
+.card-inner{
+  transition: transform 0.7s linear;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-back p{
+
+  font-size: 18px;
 
 }
 
-.project-card:hover{
-  transform: scale(1.05);
-  box-shadow: 0px 8px 12px 4px #333;
+#card-front-cypress{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1200px-Typescript.svg.png') ;
+  background-size: cover;
+  background-attachment: inherit;
+  background-position: center 80%;
+  
+}
+#card-back-cypress{
+  background-color: #3178C6;
+}
 
+#card-back-net{
+  background-color: #512BD4;
+}
+
+#card-front-net{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1200px-Microsoft_.NET_logo.svg.png');
+  background-size: cover;
+  background-attachment: unset;
+  background-position: top;
+  background-repeat: no-repeat;
+
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: solid var(--extra-color);
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+
+  box-shadow: 0px 4px 6px 2px #333;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
 }
 
 .project-links{
   text-align: center;
-  margin-top: auto 20px;
+  padding-bottom: 20px;
+  
   
   
 }
@@ -222,16 +290,18 @@ body {
   text-decoration: none;
   color: #333;
   border: solid var(--extra-color);
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
-  transition: background-color 0.5s ease-in-out;
-  
-
-}
+  transition: background-color 0.5s ease, color 0.5s ease,  transform 0.5s ease;
+  cursor: pointer;
+  background: var(--bacground-color);
+  display: inline-block;
+} 
 
 .project-links a:hover{
   background-color: #333;
   color: var(--bacground-color);
+  transform: scale(1.2);
 }
 
 .footer{
