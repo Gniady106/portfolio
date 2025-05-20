@@ -1,7 +1,8 @@
 :root {
    --background-color: #0e0f11;     /* ciemne tło, nie czarne – bardziej "tech" */
   --text-color: #f5f5f5;           /* jasny, czytelny tekst */
-  --buttons-color: #45bef1;        /* neon aqua – nowoczesny akcent */
+  --buttons-color: #45bef1; 
+  --addons-color: #17698c;       /* neon aqua – nowoczesny akcent */
   --extra-color: #1f1f1f;   
 }
 
@@ -21,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px 20px 20px 20px;
-  gap: 20px;
+  gap: 5%;
   color: var(--text-color);
   
   
@@ -118,6 +119,7 @@ body {
   line-height: 1.6;
   font-weight: 600;
   text-align: left;
+  padding: 0 15px 0 15px;
 }
 
 .btn-cv {
@@ -167,6 +169,7 @@ body {
 .skills {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .skills p {
@@ -208,7 +211,7 @@ body {
 .skill-row-1 p:hover,
 .skill-row-2 p:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px var(--buttons-color);
+  box-shadow: 0 6px 16px var(--addons-color);
   background-color: #2a2a2a;
 }
 .skill-row-1 img,
@@ -257,9 +260,9 @@ body {
 .project-card{
   
   perspective: 1000px;
-  height: 350px;
-  width: 350px;
-  padding-bottom: 50px;
+  height: 380px;
+  width: 380px;
+  
 }
 
 .card-inner{
@@ -283,28 +286,40 @@ body {
 }
 
 #card-front-cypress{
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1200px-Typescript.svg.png') ;
+  color: var(--extra-color);
+  background-image: url('https://www.cypress.io/_astro/Blog_Changes-in-Defense-of-Cypress-Property_Z1Vd2At.webp') ;
   background-size: cover;
-  background-attachment: inherit;
-  background-position: center 80%;
+
+  background-position: bottom;
   
 }
 #card-back-cypress{
-  background-color: #3178C6;
+  color: var(--background-color);
+  background-color: #E5FBF1;
 }
 
 #card-back-net{
   background-color: #512BD4;
 }
 
-#card-front-net{
+#card-front-net {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1200px-Microsoft_.NET_logo.svg.png');
   background-size: cover;
-  background-attachment: unset;
-  background-position: top;
-  background-repeat: no-repeat;
-
+  background-position: center;
+  
 }
+
+.card-front h3,
+.card-front h4{
+  padding: 0px 10px 10px 10px;
+}
+
+
+.card-back p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 
 .card-front,
 .card-back {
@@ -314,9 +329,6 @@ body {
   backface-visibility: hidden;
   border: solid var(--extra-color);
   border-radius: 20px;
-  padding: 10px 10px 10px 10px;
-  line-height: 1.2;
-
   box-shadow: 0px 4px 6px 2px #333;
 }
 
@@ -325,7 +337,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
+  
 }
 
 .project-links{
@@ -339,23 +351,21 @@ body {
 .project-links a{
   text-decoration: none;
   color: #333;
-  
-  
   border: 3px solid var(--extra-color);
   padding: 10px 20px;
+  margin: 10px;
   border-radius: 30px;
   transition: background-color 0.5s ease, color 0.5s ease,  transform 0.5s ease;
 
   cursor: pointer;
-  background: var(--bacground-color);
   
   
 } 
 
 
 .project-links a:hover{
-  background-color: #333;
-  color: var(--bacground-color);
+  background-color: var(--extra-color);
+  color: var(--text-color);
   transform: scale(1.1);
 }
 
@@ -397,18 +407,17 @@ body {
 
 display: flex;
 flex-direction: column;
-align-items: center;
-  
+    max-width: fit-content;
 
 }
 
 .footer-content a{
- display: flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   padding: 12px 24px;
   margin: 10px 0;
-  border: 2px solid var(--buttons-color);
+  border: 2px solid var(--addons-color);
   border-radius: 30px;
   background-color: transparent;
   color: #00ffff;
@@ -419,7 +428,7 @@ align-items: center;
 }
 
 .footer-content a:hover{
-   background-color: var(--buttons-color);
+   background-color: var(--addons-color);
   color: #0f2027;
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
