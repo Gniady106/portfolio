@@ -18,10 +18,13 @@ body {
  
 }
 
-@media (min-width: 740px ) and (max-width: 950px) {
+@media (min-width: 570px ) and (max-width: 950px) {
 
  
   
+  .bio {
+text-align: center !important;
+}
 .o-mnie-section {
   position: relative;
   z-index: 2;
@@ -63,7 +66,7 @@ body {
   
 }
 .hamburger {
-  font-size: 24px;
+  font-size: 20px;
   background: none;
   border: none;
   color: white;
@@ -121,7 +124,7 @@ body {
   max-width: 500px;
   color: var(--text-color);
   line-height: 1.6;
-  font-weight: 200;
+  font-weight: 300;
   text-align: left;
   font-family: 'Space Grotesk';
   padding: 0 15px 0 15px;
@@ -137,26 +140,27 @@ body {
 
   .hamburger{
     display: block;
-    font-size: 26px;
+    font-size: 22px;
     background: none;
     align-items: center;
     border:solid 2px var(--buttons-color);
     color: var(--text-color);
-    padding: 0 8px 0 10px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s ease;
+    max-width: fit-content;
     
     
   }
 
   .burger{
-    display: block;
-    font-size: 24px;
+    
+    font-size: 20px;
+
+    
     transition:  0.5s ease;
     text-align: center;
-    width: fit-content;
-    height: fit-content;
+  
     
   
     
@@ -166,7 +170,7 @@ body {
   .hamburger.active .burger{
   
     transform: rotate(90deg) scale(1.05);
-    padding: 5px 0 5px 0px;
+    
   
     
 
