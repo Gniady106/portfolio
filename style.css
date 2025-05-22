@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  font-family: 'Space Grotesk';
   
 }
 .header {
@@ -17,7 +18,39 @@ body {
  
 }
 
-@media (min-width:520px){
+@media (min-width: 740px ) and (max-width: 950px) {
+
+ 
+  
+.o-mnie-section {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0 40px 0;
+  
+}
+  .btn-cv {
+    
+  text-decoration: none;
+  color: var(--background-color);
+  background-color: #15749cb4;
+  border-radius: 20px;
+  padding: 20px;
+  border: solid var(--extra-color);
+  font-weight: 500;
+  font-size: 20px;
+  transition: background-color 0.7s ease, transform 0.7s ease;
+}
+}
+
+@media (min-width:570px ){
 
   .navbar {
   display: flex;
@@ -49,6 +82,7 @@ body {
   gap: 8px;
   transition: color 0.3s ease;
   position: relative;
+  
 }
 
 .nav-link::after {
@@ -87,8 +121,9 @@ body {
   max-width: 500px;
   color: var(--text-color);
   line-height: 1.6;
-  font-weight: 600;
-  text-align: center;
+  font-weight: 200;
+  text-align: left;
+  font-family: 'Space Grotesk';
   padding: 0 15px 0 15px;
 }
 
@@ -98,7 +133,7 @@ body {
 
 
 
-@media (max-width: 520px){
+@media (max-width: 570px){
 
   .hamburger{
     display: block;
@@ -107,7 +142,7 @@ body {
     align-items: center;
     border:solid 2px var(--buttons-color);
     color: var(--text-color);
-    padding: 0 10px 0 10px;
+    padding: 0 8px 0 10px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s ease;
@@ -130,7 +165,8 @@ body {
 
   .hamburger.active .burger{
   
-    transform: rotate(90deg) scale(1.1);
+    transform: rotate(90deg) scale(1.05);
+    padding: 5px 0 5px 0px;
   
     
 
@@ -165,9 +201,11 @@ body {
   color: var(--text-color);
   font-weight:500;
   font-size: 18px;
+  
   max-width: fit-content;
   margin: 20px 0 10px 0;
   display: flex;
+  
   align-items: center;
   gap: 8px;
   transition: color 0.3s ease;
@@ -209,7 +247,7 @@ body {
   max-width: 500px;
   color: var(--text-color);
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
   padding: 0 15px 0 15px;
 }
@@ -234,7 +272,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.501); /* ciemna półprzezroczysta warstwa */
+  background: rgba(0, 0, 0, 0.501);
   z-index: 1;
 }
 
@@ -250,7 +288,6 @@ body {
   margin: 0 auto;
   padding: 40px 0 40px 0;
   
-  font-family:  sans-serif;
 }
 
 
@@ -280,7 +317,7 @@ body {
   border-radius: 20px;
   padding: 20px;
   border: solid var(--extra-color);
- 
+  font-weight: 500;
   font-size: 20px;
   transition: background-color 0.7s ease, transform 0.7s ease;
 }
@@ -296,6 +333,7 @@ body {
   color: var(--text-color);
   font-size: 36px;
   text-align: center;
+  font-weight:  600;
   margin-bottom: 30px;
   position: relative;
 }
@@ -346,12 +384,13 @@ body {
   align-items: center;
   gap: 10px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #1c1c1c;
   color: var(--text-color);
-  min-width: 220px; 
+  min-width: 240px;
+  max-width: 240px;
   justify-content: center;
   text-align: center;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.568);
@@ -383,6 +422,7 @@ body {
 .section-title {
   text-align: center;
   font-size: 36px;
+  font-weight: 600;
   margin-bottom: 30px;
   position: relative;
 }
@@ -463,12 +503,15 @@ body {
 .card-front h3,
 .card-front h4{
   padding: 0px 10px 10px 10px;
+  font-weight: 500;
 }
 
 
 .card-back p{
   padding-left: 10px;
   padding-right: 10px;
+  font-weight: 300;
+  font-size: 17px;
 }
 
 
@@ -501,9 +544,10 @@ body {
 
 .project-links a{
   text-decoration: none;
-  color: #333;
+  color: var(--extra-color);
   border: 3px solid var(--extra-color);
   padding: 10px 20px;
+  font-weight: 500;
   margin: 10px;
   border-radius: 30px;
   transition: background-color 0.5s ease, color 0.5s ease,  transform 0.5s ease;
@@ -521,10 +565,11 @@ body {
 }
 
 .footer{
-background-color: var(--background-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   padding: 20px 20px 20px;
   text-align: center; 
+
   
 }
 
@@ -534,7 +579,7 @@ background-color: var(--background-color);
   font-size: 36px;
   text-align: center;
   margin-bottom: 30px;
-
+  font-weight: 600;
 
   
   
@@ -558,6 +603,7 @@ background-color: var(--background-color);
 .footer .write-to-me {
   margin: 5px 0;
   font-size: 20px;
+  font-weight: 400;
   
 
 }
@@ -566,9 +612,10 @@ background-color: var(--background-color);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   margin: 15px;
   font-size: 16px;
+  
 
 }
 
@@ -580,13 +627,13 @@ background-color: var(--background-color);
   text-decoration: none;
   flex-wrap: nowrap;
   font-weight: 500;
-  
+ 
   border: 2px solid var(--extra-color);
   transition: background-color 0.3s ease, transform 0.3s ease,   box-shadow 0.3s ease;
 }
 
 .contact-links a:hover {
-  background-color: var(--extra-color);
+  background-color: var(--background-color);
   transform: scale(1.05);
   box-shadow: 0 0 10px var(--buttons-color);
 }
