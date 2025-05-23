@@ -11,15 +11,15 @@ body {
   font-family: 'Space Grotesk';
   
 }
+
+
+@media (min-width: 570px ) and (max-width: 950px) {
 .header {
   color: var(--text-color);
   background:linear-gradient(90deg, #03081a, #050f3e, #15749c) ;
   padding: 10px 10px;
  
 }
-
-@media (min-width: 570px ) and (max-width: 950px) {
-
  
   
   .bio {
@@ -55,6 +55,12 @@ text-align: center !important;
 
 @media (min-width:570px ){
 
+  .header {
+  color: var(--text-color);
+  background:linear-gradient(90deg, #03081a, #050f3e, #15749c) ;
+  padding: 10px 10px;
+ 
+}
   .navbar {
   display: flex;
   justify-content: center;
@@ -138,6 +144,12 @@ text-align: center !important;
 
 @media (max-width: 570px){
 
+  .header {
+  color: var(--text-color);
+  background:linear-gradient(90deg, #03081a, #050f3e, #03081a) ;
+  padding: 10px 10px;
+ 
+}
   .hamburger{
     display: block;
     font-size: 22px;
@@ -268,7 +280,7 @@ text-align: center !important;
     url("img/Flux_Dev_A_futuristic_digital_backdrop_with_sleek_circuits_wir_2.jpg");
     background-size: cover;
 
-  background-position: center 50%;
+  background-position:  60%;
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -316,12 +328,12 @@ text-align: center !important;
 
 .btn-cv {
   text-decoration: none;
-  color: var(--background-color);
-  background-color: #15749cb4;
+  color: var(--text-color);
+  background-color: #15749c29;
   border-radius: 20px;
   padding: 20px;
-  border: solid var(--extra-color);
-  font-weight: 500;
+  border: solid #15749ce8;
+  font-weight: 300;
   font-size: 20px;
   transition: background-color 0.7s ease, transform 0.7s ease;
 }
