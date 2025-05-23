@@ -60,7 +60,7 @@ text-align: center !important;
 }
 }
 
-@media (min-width:570px ){
+@media (min-width:680px ){
 
   .header {
   color: var(--text-color);
@@ -92,7 +92,7 @@ text-align: center !important;
   text-decoration: none;
   color: var(--text-color);
   font-weight:500;
-  font-size: 18px;
+  font-size: 21px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -163,7 +163,7 @@ text-align: center !important;
 
 
 
-@media (max-width: 570px){
+@media (max-width: 680px){
 
   .header {
   color: var(--text-color);
