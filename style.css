@@ -20,7 +20,7 @@ body {
 }
 
 
-@media (min-width: 570px ) and (max-width: 950px) {
+@media (min-width: 570px ) and (max-width: 1000px) {
 .header {
   color: var(--text-color);
   background:linear-gradient(90deg, #03081a, #050f3e, #15749c) ;
@@ -260,7 +260,7 @@ text-align: center !important;
   object-fit: cover;
   object-position: center 40%; 
   border-radius: 50%;
-  border: 3px solid var(--extra-color);
+  border: 3px solid var(--addons-color);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, box-shadow 0.5s ease;
 }
