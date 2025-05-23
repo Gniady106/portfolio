@@ -1,8 +1,8 @@
 :root {
-   --background-color: #0e0f11;     /* ciemne tło, nie czarne – bardziej "tech" */
-  --text-color: #f5f5f5;           /* jasny, czytelny tekst */
+   --background-color: #0e0f11;     
+  --text-color: #f5f5f5;           
   --buttons-color: #45bef1; 
-  --addons-color: #17698c;       /* neon aqua – nowoczesny akcent */
+  --addons-color: #17698c;       
   --extra-color: #1f1f1f;   
 }
 
@@ -143,6 +143,20 @@ text-align: center !important;
   padding: 0 15px 0 15px;
 }
 
+.o-mnie-section {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0 40px 0;
+  
+}
 
 }
 
@@ -155,6 +169,10 @@ text-align: center !important;
   color: var(--text-color);
   background:linear-gradient(90deg, #03081a, #050f3e, #03081a) ;
   padding: 10px 10px;
+  z-index: 9000 ;
+  position: absolute;
+  width: 95vw;
+  
  
 }
   .hamburger{
@@ -224,11 +242,9 @@ text-align: center !important;
   color: var(--text-color);
   font-weight:500;
   font-size: 18px;
-  
   max-width: fit-content;
   margin: 20px 0 10px 0;
   display: flex;
-  
   align-items: center;
   gap: 8px;
   transition: color 0.3s ease;
@@ -274,6 +290,20 @@ text-align: center !important;
   text-align: center;
   padding: 0 15px 0 15px;
 }
+.o-mnie-section {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 90px 0 40px 0;
+  
+}
 
 }
 
@@ -299,19 +329,7 @@ text-align: center !important;
   z-index: 1;
 }
 
-.o-mnie-section {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 0 40px 0;
-  
-}
+
 
 
 
@@ -493,48 +511,67 @@ text-align: center !important;
   transform: rotateY(180deg);
 }
 
-.card-back p{
 
-  font-size: 18px;
-
-}
 
 #card-front-cypress{
-  color: var(--extra-color);
-  background-image: url('https://www.cypress.io/_astro/Blog_Changes-in-Defense-of-Cypress-Property_Z1Vd2At.webp') ;
-  background-size: cover;
-
-  background-position: bottom;
+  color: var(--text-color);
+  background-image: url('https://miro.medium.com/v2/resize:fit:600/0*YtCzzpjWb60A_P3-.png')  ;
+  background-size: 300px;
+  background-color: #2c2c2c;
+  background-position: center bottom 20%;
+  background-repeat: no-repeat;
   
 }
 #card-back-cypress{
   color: var(--background-color);
-  background-color: #E5FBF1;
+  background-color: #2c2c2c;
 }
 
 #card-back-net{
-  background-color: #512BD4;
+  background-color: #2c2c2c;
 }
 
 #card-front-net {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1200px-Microsoft_.NET_logo.svg.png');
-  background-size: cover;
-  background-position: center;
-  
+  background-image: url('https://aveneo.pl/assets/images/technology/netFramework/netFramework.png?v=JxILwTmGfq2kjl6a8ZSM7f9UYYqtGpSX6bk6s0y25p0');
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center bottom 20%;
+  background-color: #2c2c2c;
 }
 
-.card-front h3,
+
 .card-front h4{
-  padding: 0px 10px 10px 10px;
+  
   font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+   font-weight: 400;
+   margin: 10px;
+}
+
+#card-front-net h3{
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(162, 113, 214);
+  text-align: center;
+}
+
+
+#card-front-cypress h3{
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(38, 233, 156);
+  text-align: center;
 }
 
 
 .card-back p{
-  padding-left: 10px;
-  padding-right: 10px;
+  
   font-weight: 300;
   font-size: 17px;
+  color: var(--text-color);
+  text-align: center;
+  padding: 0 10px 0  10px;
 }
 
 
@@ -546,14 +583,16 @@ text-align: center !important;
   backface-visibility: hidden;
   border: solid var(--extra-color);
   border-radius: 20px;
-  box-shadow: 0px 4px 6px 2px #333;
+  
 }
 
 .card-back {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  
+
   
 }
 
@@ -567,13 +606,13 @@ text-align: center !important;
 
 .project-links a{
   text-decoration: none;
-  color: var(--extra-color);
-  border: 3px solid var(--extra-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
   padding: 10px 20px;
   font-weight: 500;
   margin: 10px;
   border-radius: 30px;
-  transition: background-color 0.5s ease, color 0.5s ease,  transform 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease,  transform 0.5s ease, border 0.5s ease;
 
   cursor: pointer;
   
@@ -582,8 +621,9 @@ text-align: center !important;
 
 
 .project-links a:hover{
-  background-color: var(--extra-color);
-  color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--extra-color);
+  border: 2px solid var(--extra-color);
   transform: scale(1.1);
 }
 
