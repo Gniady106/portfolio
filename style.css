@@ -6,6 +6,13 @@
   --extra-color: #1f1f1f;   
 }
 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
   font-family: 'Space Grotesk';
@@ -115,12 +122,12 @@ text-align: center !important;
 }
 
 .my-img {
-  width: 350px;
+  width: 400px;
   height: 400px;
   object-fit: cover;
   object-position: center 40%; 
   border-radius: 50%;
-  border: 3px solid var(--extra-color);
+  border: 3px solid var(--addons-color);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, box-shadow 0.5s ease;
 }
