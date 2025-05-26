@@ -16,7 +16,7 @@ html {
 body {
   margin: 0;
   font-family: 'Space Grotesk';
-  
+  background: var(--extra-color);
 }
 
 
